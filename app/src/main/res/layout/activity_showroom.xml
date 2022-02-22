@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".showroom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5mm"
+        android:gravity="center"
+        android:text="EX-SHOWROOM'S"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/showroom_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="7mm"
+        android:hint="Showroom_no"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+        <Spinner
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showroom_no"
+            android:layout_marginTop="4mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/company"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showroom_no"
+            android:layout_marginTop="3mm"
+            android:text="Company :-"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/company"
+        android:layout_marginTop="2mm"
+        android:hint="location"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:layout_marginTop="2mm"
+        android:hint="address"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/pincode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="2mm"
+        android:hint="pincode"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/Phno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pincode"
+        android:layout_marginTop="2mm"
+        android:hint="PH number"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:layout_marginTop="5mm"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/Phno"
+        android:layout_marginRight="30mm"
+        />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_marginLeft="30mm"
+        android:layout_alignLeft="@+id/insert"
+        android:layout_marginTop="5mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/Phno"
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_marginRight="30mm"
+        android:layout_marginTop="4mm"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/insert"
+        />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view"
+        android:layout_marginTop="4mm"
+        android:layout_marginLeft="30mm"
+        android:shadowColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/update"
+        />
+    </RelativeLayout>
+
+
+
+</ScrollView>

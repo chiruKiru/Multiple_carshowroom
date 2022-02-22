@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".admin5_employee">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5mm"
+        android:gravity="center"
+        android:text="EMPLOYEE"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/ssn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="7mm"
+        android:hint="Enter SSN"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ssn"
+        android:layout_marginTop="2mm"
+        android:hint="Fname"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fname"
+        android:layout_marginTop="2mm"
+        android:hint="Lname"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/company1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:text="Company"
+            android:layout_below="@+id/gender1"
+            android:layout_marginRight="30mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <Spinner
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender"
+            android:layout_marginTop="4mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/company"/>
+        <TextView
+            android:id="@+id/gender1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:text="Gender"
+            android:layout_below="@+id/lname"
+            android:layout_marginRight="30mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <Spinner
+            android:id="@+id/gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lname"
+            android:layout_marginTop="4mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/Gender"/>
+
+        <TextView
+            android:id="@+id/showroom_no1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:text="Shoowroom_no"
+            android:layout_below="@+id/company"
+            android:layout_marginRight="25mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <Spinner
+            android:id="@+id/showroom_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company"
+            android:layout_marginTop="4mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/Showroom_no"/>
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:layout_marginTop="4mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/showroom_no"
+        android:layout_marginRight="30mm"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_marginLeft="30mm"
+        android:layout_alignLeft="@+id/insert"
+        android:layout_marginTop="4mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/showroom_no"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_marginRight="30mm"
+        android:layout_marginTop="4mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/insert"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="4mm"
+        android:layout_marginLeft="30mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/update"
+        />
+    </RelativeLayout>
+</ScrollView>

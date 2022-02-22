@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".admin7_rating">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3mm"
+        android:gravity="center"
+        android:text="RATING"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/car_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="6mm"
+        android:hint="car id"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/model"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_id"
+        android:layout_marginTop="1mm"
+        android:hint="Model"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/comfort"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/model"
+        android:layout_marginTop="1mm"
+        android:hint="Comfort rating"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/performance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comfort"
+        android:layout_marginTop="1mm"
+        android:hint="Performance rating"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/fueleconomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/performance"
+        android:layout_marginTop="1mm"
+        android:hint="Fuel Economy rating"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/valueformoney"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fueleconomy"
+        android:layout_marginTop="1mm"
+        android:hint="Value for money rating"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/exterior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valueformoney"
+        android:layout_marginTop="1mm"
+        android:hint="Exterior rating"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:layout_marginTop="4mm"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/exterior"
+        android:layout_marginRight="30mm"
+        />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/black"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:layout_marginLeft="30mm"
+        android:layout_alignLeft="@+id/insert"
+        android:layout_marginTop="4mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/exterior"
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_marginRight="30mm"
+        android:layout_marginTop="4mm"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/insert"
+        />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view"
+        android:layout_marginTop="4mm"
+        android:layout_marginLeft="30mm"
+        android:shadowColor="@color/white"
+        android:backgroundTint="@color/black"
+        android:layout_below="@+id/update"
+        />
+</RelativeLayout>
+
+
+</ScrollView>

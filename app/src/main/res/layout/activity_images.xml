@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".Images">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6mm"
+        android:gravity="center"
+        android:text="IMAGES"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/car_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="10mm"
+        android:hint="Car_Id"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/car_id"
+        android:layout_marginTop="1mm"
+        android:hint="Image Link"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/images"
+        android:layout_marginTop="1mm"
+        android:hint="Video Link"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/insert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="insert"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/videos"
+        android:layout_marginTop="5mm"
+        android:backgroundTint="@color/black"
+        />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="update"
+        android:backgroundTint="@color/black"
+        android:layout_marginTop="2mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/insert"
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:layout_marginTop="2mm"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/update"
+        />
+
+    <Button
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="view"
+        android:layout_marginTop="2mm"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/delete"
+        android:backgroundTint="@color/black"
+        />
+
+</RelativeLayout>
+</ScrollView>

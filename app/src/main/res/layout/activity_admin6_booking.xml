@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".admin6_booking">
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5mm"
+        android:gravity="center"
+        android:text="BOOKING"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/booking_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:layout_marginTop="10mm"
+        android:hint="Booking no"
+        android:textColor="@color/black"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/viewall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="VIEW ALL"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/booking_no"
+        android:layout_marginTop="3mm"
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete"
+        android:backgroundTint="@color/black"
+        android:shadowColor="@color/white"
+        android:layout_below="@+id/viewall"
+        android:layout_marginTop="3mm"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context="booking.book_4">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="2mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOOKING"
+            android:textSize="5mm"
+            android:layout_marginLeft="20mm"
+            android:id="@+id/hi"
+            />
+
+        <TextView
+            android:layout_below="@+id/hi"
+            android:layout_marginTop="8mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fname :- "
+            android:textSize="4mm"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hi"
+            android:id="@+id/fname"
+            android:layout_marginTop="8mm"
+            android:layout_marginLeft="20mm"
+            />
+
+        <TextView
+            android:layout_below="@+id/fname"
+            android:layout_marginTop="2mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lname :- "
+            android:textSize="4mm"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fname"
+            android:id="@+id/lname"
+            android:layout_marginTop="2mm"
+            android:layout_marginLeft="20mm"
+            />
+
+        <TextView
+            android:layout_below="@+id/lname"
+            android:layout_marginTop="2mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date :- "
+            android:textSize="4mm"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lname"
+            android:id="@+id/Date"
+            android:layout_marginTop="2mm"
+            android:layout_marginLeft="20mm"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Date"
+            android:layout_marginTop="2mm"
+            android:text="DL_NO :- "
+            android:textSize="4mm" />
+
+        <EditText
+            android:id="@+id/DLNO"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Date"
+            android:layout_marginLeft="20mm"
+            android:layout_marginTop="2mm" />
+
+        <TextView
+            android:layout_below="@+id/DLNO"
+            android:layout_marginTop="2mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ph_no :- "
+            android:textSize="4mm"
+            />
+
+        <EditText
+            android:id="@+id/phno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/DLNO"
+            android:layout_marginLeft="20mm"
+            android:layout_marginTop="2mm" />
+
+        <TextView
+            android:layout_below="@+id/phno"
+            android:layout_marginTop="5mm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Showroom :- "
+            android:textSize="4mm"
+            />
+
+        <Spinner
+            android:id="@+id/Showroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/phno"
+            android:layout_marginLeft="30mm"
+            android:layout_marginTop="7mm"
+            android:background="@color/teal_700"
+            android:entries="@array/Showroom_address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Showroom"
+            android:layout_marginTop="5mm"
+            android:text="Payment :- "
+            android:textSize="4mm" />
+
+        <Spinner
+            android:id="@+id/payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Showroom"
+            android:layout_marginLeft="30mm"
+            android:layout_marginTop="7mm"
+            android:background="@color/teal_700"
+            android:entries="@array/pay" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/payment"
+            android:id="@+id/ok1"
+            android:layout_marginTop="6mm"
+            android:text="Submit" />
+
+    </RelativeLayout>
+
+</ScrollView>

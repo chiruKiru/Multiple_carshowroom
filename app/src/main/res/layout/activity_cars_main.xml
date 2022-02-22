@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".cars_main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6mm"
+            android:gravity="center"
+            android:text="CARS"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/car_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:hint="CAR ID(only for delete and view)"
+            android:layout_marginTop="10mm"
+            android:layout_below="@+id/welcome"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:hint="CAR MODEL"
+            android:layout_marginTop="4mm"
+            android:layout_below="@+id/car_id"
+            android:textColor="@color/black"/>
+
+        <Spinner
+            android:id="@+id/company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/model"
+            android:layout_marginTop="4mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/company"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/model"
+            android:layout_marginTop="3mm"
+            android:text="Company :-"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Car Type :-"
+            android:textColor="@color/black"
+            android:layout_below="@+id/company"
+            android:layout_marginTop="3mm"
+            android:textSize="24dp"/>
+
+        <Spinner
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/company"
+            android:layout_marginTop="4mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/type" />
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="insert"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/type"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:backgroundTint="@color/black"
+            android:layout_marginTop="2mm"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/insert"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:layout_marginTop="2mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/update"
+            />
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="view"
+            android:layout_marginTop="2mm"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/delete"
+            android:backgroundTint="@color/black"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="24dp"
+    android:layout_height="match_parent"
+    tools:context=".admin8_specification">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:gravity="center"
+            android:text="SPECIFICATION"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/car_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_marginTop="7mm"
+            android:hint="Car_id"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+
+        <EditText
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/car_id"
+            android:layout_marginTop="1mm"
+            android:hint="Model"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/mileage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/model"
+            android:layout_marginTop="1mm"
+            android:hint="mileage"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <EditText
+            android:id="@+id/Engine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mileage"
+            android:layout_marginTop="1mm"
+            android:hint="Engine CC"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <Spinner
+            android:id="@+id/fueltype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color"
+            android:layout_marginTop="7mm"
+            android:background="@color/teal_700"
+            android:layout_marginLeft="30mm"
+            android:entries="@array/fueltype" />
+
+        <Spinner
+            android:id="@+id/transmissiontype"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fueltype"
+            android:layout_marginLeft="30mm"
+            android:layout_marginTop="5mm"
+            android:background="@color/teal_700"
+            android:entries="@array/transmissiontype"
+            android:scrollbarSize="30mm" />
+
+        <Spinner
+            android:id="@+id/seater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/trans"
+            android:layout_marginLeft="30mm"
+            android:layout_marginTop="5mm"
+            android:background="@color/teal_700"
+            android:entries="@array/seater"
+            android:gravity="center"
+            android:scrollbarSize="30mm" />
+
+        <TextView
+            android:id="@+id/fuel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6mm"
+            android:text="Fuel Type"
+            android:layout_below="@+id/color"
+            android:layout_marginRight="30mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/trans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:text="Transmission"
+            android:layout_below="@+id/fuel"
+            android:layout_marginRight="30mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <TextView
+            android:id="@+id/seat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:text="Seater"
+            android:layout_below="@+id/trans"
+            android:layout_marginRight="30mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/insert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="insert"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/seater"
+            android:layout_marginRight="30mm"
+            />
+
+        <Button
+            android:id="@+id/update"
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/black"
+            android:layout_height="wrap_content"
+            android:text="update"
+            android:layout_marginLeft="30mm"
+            android:layout_alignLeft="@+id/insert"
+            android:layout_marginTop="5mm"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/seater"
+            />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="delete"
+            android:layout_marginRight="30mm"
+            android:layout_marginTop="4mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:layout_below="@+id/insert"
+            />
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="view"
+            android:layout_marginTop="4mm"
+            android:layout_marginLeft="30mm"
+            android:shadowColor="@color/white"
+            android:backgroundTint="@color/black"
+            android:layout_below="@+id/update"
+            />
+        <TextView
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3mm"
+            android:text="Color"
+            android:layout_below="@+id/Engine"
+            android:layout_marginRight="30mm"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+        <CheckBox
+            android:id="@+id/color1"
+            android:layout_marginLeft="20mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Engine"
+            android:text="RED"
+            android:textColor="@color/black"/>
+        <CheckBox
+            android:id="@+id/color2"
+            android:layout_marginLeft="30mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Engine"
+            android:text="BLACK"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/color3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Engine"
+            android:layout_marginLeft="42mm"
+            android:text="Silver"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/color4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color1"
+            android:layout_marginLeft="20mm"
+            android:text="White"
+            android:textColor="@color/black" />
+
+        <CheckBox
+            android:id="@+id/color5"
+            android:layout_marginLeft="30mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color2"
+            android:text="Maroon"
+            android:textColor="@color/black"/>
+
+        <CheckBox
+            android:id="@+id/color6"
+            android:layout_marginLeft="42mm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color3"
+            android:text="Brown"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+</ScrollView>

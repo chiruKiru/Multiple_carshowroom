@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".admin2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:gravity="center"
+            android:text="WELCOME ADMIN"
+            android:textColor="@color/black"
+            android:textSize="24dp" />
+
+        <Button
+            android:id="@+id/cars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="cars" />
+
+        <Button
+            android:id="@+id/specification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cars"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="specification" />
+
+        <Button
+            android:id="@+id/testdrive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/specification"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="Test drive" />
+
+        <Button
+            android:id="@+id/employee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/testdrive"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="employee" />
+
+        <Button
+            android:id="@+id/booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/employee"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="booking" />
+
+        <Button
+            android:id="@+id/rating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/booking"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="ratinging" />
+
+
+        <Button
+            android:id="@+id/showroom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rating"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="ex - showroom" />
+
+        <Button
+            android:id="@+id/pricing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/showroom"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="pricing" />
+
+        <Button
+            android:id="@+id/images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pricing"
+            android:layout_marginTop="5mm"
+            android:backgroundTint="@color/black"
+            android:shadowColor="@color/white"
+            android:text="images/videos" />
+
+    </RelativeLayout>
+</ScrollView>

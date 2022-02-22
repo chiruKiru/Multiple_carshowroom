@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name ="fueltype">
+    <item>Petrol</item>
+    <item>Diesel</item>
+        <item>Petrol/Diesel</item>
+    </string-array>
+    <string-array name ="transmissiontype">
+        <item>Auto</item>
+        <item>Manual</item>
+        <item>Auto/Manual</item>
+    </string-array>
+    <string-array name ="seater">
+        <item>4</item>
+        <item>6</item>
+        <item>7</item>
+        <item>9</item>
+    </string-array>
+    <string-array name ="company">
+        <item>Mahindra</item>
+        <item>Toyota</item>
+        <item>Hyundai</item>
+    </string-array>
+    <string-array name ="company1">
+        <item>All</item>
+        <item>Mahindra</item>
+        <item>Toyota</item>
+        <item>Hyundai</item>
+    </string-array>
+    <string-array name ="type">
+        <item>SUV</item>
+        <item>MUV</item>
+        <item>Sedan</item>
+        <item>HatchBack</item>
+        <item>4X4</item>
+    </string-array>
+
+    <string-array name ="type1">
+        <item>All</item>
+        <item>SUV</item>
+        <item>MUV</item>
+        <item>Sedan</item>
+        <item>HatchBack</item>
+        <item>4X4</item>
+    </string-array>
+
+    <string-array name ="Gender">
+            <item>Male</item>
+            <item>Female</item>
+    </string-array>
+
+    <string-array name ="Showroom_no">
+        <item>111</item>
+        <item>222</item>
+        <item>333</item>
+        <item>444</item>
+    </string-array>
+
+
+    <string-array name ="Showroom_address">
+        <item>Vijaynagar</item>
+        <item>Majestic</item>
+        <item>Yalhanka</item>
+        <item>Kengeri</item>
+        <item>Jp Nagar</item>
+    </string-array>
+
+    <string-array name ="Timmings">
+        <item>10 - 12</item>
+        <item>1 - 2:30 </item>
+        <item>2:30 - 430 </item>
+    </string-array>
+
+    <string-array name ="pay">
+        <item>Offline</item>
+        <item> Card </item>
+        <item> UPI </item>
+    </string-array>
+
+
+</resources>

@@ -1,21 +1,15 @@
 package com.example.showroom;
 
-import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
-import android.database.CharArrayBuffer;
-import android.database.ContentObserver;
 import android.database.Cursor;
-import android.database.DataSetObserver;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.net.Uri;
-import android.os.Bundle;
 
 
 public class DBHelper extends SQLiteOpenHelper {
 
-    public static final String DATABASE_NAME_1 = "hi.db";
+    public static final String DATABASE = "LILL.db";
 
 
     public static final String TABLE_NAME = "cars_main_table"; //cars
@@ -83,7 +77,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COL86 = "timming";
     public static final String COL96 = "Model";
     public static final String COL101 = "Company";
-    public static final String COL102 = "emp_id";
+    public static final String COL102 = "SSN";
     public static final String COL103 = "Showroom_id";
 
     public static final String TABLE_NAME_8 = "Car_driving"; // Test_Drive Table
@@ -101,7 +95,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public static final String COL1003 = "Showroom_id";
 
     public DBHelper(Context context) {
-        super(context, DATABASE_NAME_1,null,3);
+        super(context, DATABASE,null,10);
     }
 
     @Override
@@ -171,6 +165,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 + COL86 + " text not null, "
                 + COL96 + " text not null, "
                 + COL101 + " text not null, "
+                + COL102 + "INTEGER ,"
+                + COL103 + "INTEGER , "
                 + " FOREIGN KEY (" + COL102 + ") REFERENCES " + TABLE_NAME_3 + "(" + COL11 + "), "
                 + " FOREIGN KEY (" + COL103 + ") REFERENCES " + TABLE_NAME_2 + "(" + COL12 + "));");
 
@@ -185,6 +181,8 @@ public class DBHelper extends SQLiteOpenHelper {
                 + COL88 + " text not null, "
                 + COL98 + " text not null, "
                 + COL1001 + " text not null, "
+                + COL1002 + "INTEGER ,"
+                + COL1003 + "INTEGER , "
                 + " FOREIGN KEY (" + COL1002 + ") REFERENCES " + TABLE_NAME_3 + "(" + COL11 + "), "
                 + " FOREIGN KEY (" + COL1003 + ") REFERENCES " + TABLE_NAME_2 + "(" + COL12 + "));");
     }
@@ -213,10 +211,7 @@ public class DBHelper extends SQLiteOpenHelper {
         contentValues.put(COL_3,company);
         contentValues.put(COL_4,type);
         long res = db.insert(TABLE_NAME,null,contentValues);
-        if(res == -1){
-            return false;
-        }else
-            return true;
+       return res != -1;
     }
 
     public Cursor getCar() {
@@ -612,7 +607,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 " FROM "+TABLE_NAME + " a INNER JOIN "+TABLE_NAME_6+" c ON a.CAR_ID=c.car_id "+
                 "INNER JOIN "+TABLE_NAME_4+" b ON a.CAR_ID=b.CAR_ID WHERE a.COMPANY = ?";
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res = db.rawQuery(MY_QUERY,new String[] {data.toString()});
+        Cursor res = db.rawQuery(MY_QUERY,new String[] {data});
         return res;
     }
     public Cursor get_detail2(String data){
@@ -620,7 +615,7 @@ public class DBHelper extends SQLiteOpenHelper {
                 " FROM "+TABLE_NAME + " a INNER JOIN "+TABLE_NAME_6+" c ON a.CAR_ID=c.car_id "+
                 " LEFT JOIN "+TABLE_NAME_4+" b ON a.CAR_ID=b.CAR_ID WHERE a.TYPE = ?";
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor res = db.rawQuery(MY_QUERY,new String[] {data.toString()});
+        Cursor res = db.rawQuery(MY_QUERY,new String[] {data});
         return res;
     }
 
